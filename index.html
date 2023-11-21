@@ -8,9 +8,9 @@
     <script src="magic.js" defer></script>
 </head>
 <body>
-    <div class="header">Kuntosali-apustaja v0.1</div>
+    <div class="header"></div>
 
-    <div class="logoBox">[LOGO]</div>
+    <div class="logoBox"><img class="top_logo" src="img/logo_aku.jpg">Kuntosali-apustaja v0.1</div>
 
     <div class="contentWrapper">
         <div class="penkkipunnerrus wrapper">
@@ -29,15 +29,50 @@
             </div>
         </div>  <!-- Loppuu kuva -->
             <div class="penkkipunnerrus dynamicWrapper">
-                <div class="penkkipunnerrus paino">120KG</div>
+                <div class="penkkipunnerrus paino" id="1">120kg</div>
                 <div class="kontrollit"> 
-                    <button class="buttonWrapper plus">+</button>
+                    <button onclick="modifyWeight(painot.penkki, 10.00)" class="buttonWrapper plus 10kg" id="btn_plus_10kg">+10Kg</button>
                     <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
-                    <button class="buttonWrapper minus">-</button>
+                    <button onclick="modifyWeight(painot.penkki, -10.00)" class="buttonWrapper minus 10kg" id="btn_minus_10kg">-10Kg</button>
+                    <div class="jakopalkki nappiryhmä_väli"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(painot.penkki, 1.25)" class="buttonWrapper plus 1_25kg" id="btn_plus_1_25kg">+1.25Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(painot.penkki, -1.25)" class="buttonWrapper minus 1_25kg" id="btn_minus_1_25kg">-1.25Kg</button>
                 </div>
             </div>
         </div>
-    </div>
 
+
+        <div class="ylätalja wrapper">
+            <div class="ylätalja info">
+            <div class="ylätalja kuva"> <img class=logo src="img/02-lateral _pulldown.jpeg"> </div>
+            <div class="ylätalja tietoruutu">
+            <div class="ylätalja otsikko">Ylätaljaveto</div>
+            <div class="ylätalja teksti">Aseta istuimen korkeus mukavaan asentoon.
+                Aseta tangon korkeus sopivalle tasolle.
+                Säädä reisityyny tueksi liikkeen ajaksi.
+                Ota leveämpi kuin hartialevyinen ote tangosta, polvet reisityynyn alla.
+                Vedä tankoa suoraan alaspäin kohti rintaa, kunnes olkavarret ovat vartalon
+                vieressä. Palauta takaisin alkuasentoon. Ylätaljaveto juuri niinkuin olet ennemminkin tehnyt pienestä takakenosta. Hartiat
+                pysyvät rentona ja keskityt yläselän tekemään vetotyöhön.
+                </div>
+            </div>
+        </div>  <!-- Loppuu kuva -->
+            <div class="ylätalja dynamicWrapper">
+                <div class="ylätalja paino" id="1">Anneli</div>
+                <div class="kontrollit"> 
+                    <button onclick="modifyWeight(painot.talja, 10.00)" class="buttonWrapper plus 10kg" id="btn_plus_10kg">+10Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(painot.talja, -10.00)" class="buttonWrapper minus 10kg" id="btn_minus_10kg">-10Kg</button>
+                    <div class="jakopalkki nappiryhmä_väli"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(painot.talja, 1.25)" class="buttonWrapper plus 1_25kg" id="btn_plus_1_25kg">+1.25Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(painot.talja, -1.25)" class="buttonWrapper minus 1_25kg" id="btn_minus_1_25kg">-1.25Kg</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
     <div class=footer>&#169; Tekniikka Päin Mäntyä Oy - 2023</div>
 </body>

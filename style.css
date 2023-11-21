@@ -1,7 +1,7 @@
 .header {
     background-color: red;
     margin: 0px;
-    padding: 8px 4px;
+    padding: 0px 0px;
     border: 0px;    
 }
 .footer {
@@ -10,7 +10,7 @@
     margin: 0px;
     padding: 14px 14px;
     border: 0px;
-    font-size: 24px;
+    font-size: 14px;
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -18,11 +18,13 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    max-width: 900px;
+    max-height: 100%;
   }
 .contentWrapper {
     display: flex;
     min-height: 300px; /* ToDo: Flexbox */
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(255, 214, 127);
     justify-content: center;
     margin: 0;
@@ -34,25 +36,31 @@ body {
     padding: 0px;
     border: 0px;  
 }
+
+.top_logo {
+    padding: 0px 16px 0px 0px;
+}
+
 .logoBox {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 50px;
+    height: 100%;
     background-color: aquamarine;
     margin: 0px;
-    padding-left: 24px;
+    padding-left: 0px;
     border: 0px;  
 }
 
 .paino {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     border: 1px;
     font-size: 5vw;
-    padding: 20px;
+    padding: 16px 0px 16px 9px;
     border-style: solid;
+    font-weight: bold;
     background-color: rgb(255, 0, 212);
 }
 
@@ -73,13 +81,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color:rgb(87, 210, 30);
-    font-size: 40px;
+    font-size: 11px;
     border: 2px;
     border-style: solid;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 50px;
+    font-weight: bold;
 }
 
 .plus {
@@ -142,7 +151,7 @@ body {
 
 .teksti {
     display: flex;
-    background-color:rgb(92, 105, 91);
+    /* background-color:rgb(92, 105, 91); Testikäyttö */
     margin: 0px;
     border: 0px;
 }
@@ -154,9 +163,14 @@ body {
 }
 
 .jakopalkki {
-  min-width: 5vw;
+  min-width: 1vw;
 
 }
+
+.jakopalkki.nappiryhmä_väli {
+    min-width: 7vw;
+  
+  }
 
 .dynamicWrapper {
     display: flex;
