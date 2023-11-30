@@ -1,22 +1,48 @@
 // Current database of weights
 let painot = {
 
-    penkki: { 
+    soutulaite: { 
         id: 1,
-        currentWeight: 57.50,
+        currentWeight: 10,
+        unit: " asteikko",
+        htmlClassName: "soutulaite",
+    },
+
+    penkki: { 
+        id: 2,
+        currentWeight: 60.00,
         unit: "kg",
         htmlClassName: "penkkipunnerrus",
    },
 
     talja:  { 
-        id: 2,
-        currentWeight: 40.00,
+        id: 3,
+        currentWeight: 45.00,
         unit: "kg", 
         htmlClassName: "ylätalja",
-   }
+   },
+
+    vino_rintapunnerrus_taljassa:  { 
+      id: 4,
+      currentWeight: 25.00,
+      unit: "kg", 
+      htmlClassName: "vino_rintapunnerrus_taljassa",
+    },
+    
+    hauiskaanto_kasipaino:  { 
+        id: 5,
+        currentWeight: 9.00,
+        unit: "kg", 
+        htmlClassName: "hauiskaanto_kasipainot",
+    },
+
+    taljasoutu:  { 
+        id: 6,
+        currentWeight: 40.00,
+        unit: "kg", 
+        htmlClassName: "taljasoutu",
+    }
 }
-
-
 
 
 

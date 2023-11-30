@@ -12,7 +12,34 @@
 
     <div class="logoBox"><img class="top_logo" src="img/logo_aku.jpg">Kuntosali-apustaja v0.1</div>
 
-    <div class="contentWrapper">
+    <div class="contentWrapper"> <!-- contentWrapper kaikille -->
+
+        <!-- Soutu, lämmittelyksi -->
+        <div class="soutulaite wrapper">
+            <div class="soutulaite info">
+                <div class="soutulaite kuva"> <img class=logo src="img/00-placeholder.jpeg"> </div>
+                <div class="soutulaite tietoruutu">
+                <div class="soutulaite otsikko">Soutulaite</div>
+                <div class="soutulaite teksti">Soutamalla 1 kilometri lämmittelynä.
+                </div>
+            </div>
+        </div>  <!-- Loppuu kuva -->
+                <div class="soutulaite dynamicWrapper">
+                    <div class="soutulaite paino" id="1">10 taso</div>
+                    <div class="kontrollit"> 
+                        <button onclick="modifyWeight(this)" class="buttonWrapper plus 10kg" id="btn_plus_10kg" data-weight="10">+10Kg</button>
+                        <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                        <button onclick="modifyWeight(this)" class="buttonWrapper minus 10kg" id="btn_minus_10kg" data-weight="-10">-10Kg</button>
+                        <div class="jakopalkki nappiryhmä_väli"></div>  <!-- Nappien välinen erotus  -->
+                        <button onclick="modifyWeight(this)" class="buttonWrapper plus 1_25kg" id="btn_plus_1_25kg" data-weight="1.25">+1.25Kg</button>
+                        <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                        <button onclick="modifyWeight(this)" class="buttonWrapper minus 1_25kg" id="btn_minus_1_25kg" data-weight="-1.25">-1.25Kg</button>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Penkkipunnerrus -->
         <div class="penkkipunnerrus wrapper">
             <div class="penkkipunnerrus info">
             <div class="penkkipunnerrus kuva"> <img class=logo src="img/01-bench.png"> </div>
@@ -29,7 +56,7 @@
             </div>
         </div>  <!-- Loppuu kuva -->
             <div class="penkkipunnerrus dynamicWrapper">
-                <div class="penkkipunnerrus paino" id="1">120kg</div>
+                <div class="penkkipunnerrus paino" id="2">60kg</div>
                 <div class="kontrollit"> 
                     <button onclick="modifyWeight(this)" class="buttonWrapper plus 10kg" id="btn_plus_10kg" data-weight="10">+10Kg</button>
                     <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
@@ -43,23 +70,127 @@
         </div>
 
 
+
+        <!-- Ylätalja -->
         <div class="ylätalja wrapper">
             <div class="ylätalja info">
             <div class="ylätalja kuva"> <img class=logo src="img/02-lateral _pulldown.jpeg"> </div>
             <div class="ylätalja tietoruutu">
             <div class="ylätalja otsikko">Ylätaljaveto</div>
-            <div class="ylätalja teksti">Aseta istuimen korkeus mukavaan asentoon.
+            <div class="ylätalja teksti">
+                Aseta istuimen korkeus mukavaan asentoon.
                 Aseta tangon korkeus sopivalle tasolle.
                 Säädä reisityyny tueksi liikkeen ajaksi.
                 Ota leveämpi kuin hartialevyinen ote tangosta, polvet reisityynyn alla.
                 Vedä tankoa suoraan alaspäin kohti rintaa, kunnes olkavarret ovat vartalon
-                vieressä. Palauta takaisin alkuasentoon. Ylätaljaveto juuri niinkuin olet ennemminkin tehnyt pienestä takakenosta. Hartiat
+                vieressä. Palauta takaisin alkuasentoon. 
+                
+                Ylätaljaveto juuri niinkuin olet ennemminkin tehnyt pienestä takakenosta. Hartiat
                 pysyvät rentona ja keskityt yläselän tekemään vetotyöhön.
                 </div>
             </div>
         </div>  <!-- Loppuu kuva -->
             <div class="ylätalja dynamicWrapper">
-                <div class="ylätalja paino" id="2">Anneli</div>
+                <div class="ylätalja paino" id="3">45kg</div>
+                <div class="kontrollit"> 
+                    <button onclick="modifyWeight(this)" class="buttonWrapper plus 10kg" id="btn_plus_10kg" data-weight="10">+10Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper minus 10kg" id="btn_minus_10kg" data-weight="-10">-10Kg</button>
+                    <div class="jakopalkki nappiryhmä_väli"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper plus 1_25kg" id="btn_plus_1_25kg" data-weight="1.25">+1.25Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper minus 1_25kg" id="btn_minus_1_25kg" data-weight="-1.25">-1.25Kg</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Vino rintapunnerrus taljassa -->
+        <div class="vino_rintapunnerrus_taljassa wrapper">
+            <div class="vino_rintapunnerrus_taljassa info">
+            <div class="vino_rintapunnerrus_taljassa kuva"> <img class=logo src="img/00-placeholder.jpeg"> </div>
+            <div class="vino_rintapunnerrus_taljassa tietoruutu">
+            <div class="vino_rintapunnerrus_taljassa otsikko">Vino rintapunnerrus taljassa</div>
+            <div class="vino_rintapunnerrus_taljassa teksti">
+                Varmista, että taljan kahvat ovat ylimmällä asetuksella.
+                Kävele kummankin kahvan luo vuorotellen ja ota kiinni kahvoista.
+                Pitäen kyynärpäät pienessä koukussa ja kämmenet osoittaen eteenpäin, astu
+                eteenpäin ottaen vastaan painon vastuksen.
+                Pidä hyvä asento ja tuo hitaasti käsiä alaspäin kunnes ne ovat vierekkäin
+                alavatsalihasten edessä.
+                Pidä kyynärpäät hieman koukussa samalla kun punnerrat rintalihaksilla.
+                Palauta kädet hitaasti takaisin alkuasentoon ja toista vaadittu toistomäärä.         
+                </div>
+            </div>
+        </div>  <!-- Loppuu kuva -->
+            <div class="vino_rintapunnerrus_taljassa dynamicWrapper">
+                <div class="vino_rintapunnerrus_taljassa paino" id="4">25kg</div>
+                <div class="kontrollit"> 
+                    <button onclick="modifyWeight(this)" class="buttonWrapper plus 10kg" id="btn_plus_10kg" data-weight="10">+10Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper minus 10kg" id="btn_minus_10kg" data-weight="-10">-10Kg</button>
+                    <div class="jakopalkki nappiryhmä_väli"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper plus 1_25kg" id="btn_plus_1_25kg" data-weight="1.25">+1.25Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper minus 1_25kg" id="btn_minus_1_25kg" data-weight="-1.25">-1.25Kg</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--  Hauiskääntö käsipainoilla vuorotahtia -->
+        <div class="hauiskaanto_kasipainot wrapper">
+            <div class="hauiskaanto_kasipainot info">
+            <div class="hauiskaanto_kasipainot kuva"> <img class=logo src="img/00-placeholder.jpeg"> </div>
+            <div class="hauiskaanto_kasipainot tietoruutu">
+            <div class="hauiskaanto_kasipainot otsikko">Hauiskääntö käsipainoilla vuorotahtia</div>
+            <div class="hauiskaanto_kasipainot teksti">
+                Seiso hyvässä ryhdissä käsipainot molemmissa käsissä, kädet suorina
+                (kämmenet sisäänpäin).
+                Pidä olkavarsi paikoillaan ja koukista toinen kyynärpää. Ojenna kyynärpää takaisin
+                alkuasentoon ja toista toisella kädellä.
+
+                Tukeva asento jaloilla.
+                </div>
+            </div>
+        </div>  <!-- Loppuu kuva -->
+            <div class="hauiskaanto_kasipainot dynamicWrapper">
+                <div class="hauiskaanto_kasipainot paino" id="5">9kg</div>
+                <div class="kontrollit"> 
+                    <button onclick="modifyWeight(this)" class="buttonWrapper plus 10kg" id="btn_plus_10kg" data-weight="10">+10Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper minus 10kg" id="btn_minus_10kg" data-weight="-10">-10Kg</button>
+                    <div class="jakopalkki nappiryhmä_väli"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper plus 1_25kg" id="btn_plus_1_25kg" data-weight="1.25">+1.25Kg</button>
+                    <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
+                    <button onclick="modifyWeight(this)" class="buttonWrapper minus 1_25kg" id="btn_minus_1_25kg" data-weight="-1.25">-1.25Kg</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Soutu taljassa, lattialla istuen -->
+        <div class="taljasoutu wrapper">
+            <div class="taljasoutu info">
+            <div class="taljasoutu kuva"> <img class=logo src="img/00-placeholder.jpeg"> </div>
+            <div class="taljasoutu tietoruutu">
+            <div class="taljasoutu otsikko">Soutu taljassa, lattialla istuen</div>
+            <div class="taljasoutu teksti">
+                Aseta talja alimpaan asetukseen ja ota kiinni kahvoista kummallakin kädellä.
+                Istu alas ja ojenna jalkoja, kunnes polvet ovat vain hieman koukussa.
+                Ota paino hallintaan.
+
+                Pidä hyvä asento ja vedä kahvoja alavatsaa kohti pitäen kädet lähellä vartaloa.
+                Vedä kunnes olkavarret ovat yhdesuuntaisesti vartalosi kanssa ennen kuin annat
+                painon palautua takaisin alkuasentoon.
+                </div>
+            </div>
+        </div>  <!-- Loppuu kuva -->
+            <div class="taljasoutu dynamicWrapper">
+                <div class="taljasoutu paino" id="6">40kg</div>
                 <div class="kontrollit"> 
                     <button onclick="modifyWeight(this)" class="buttonWrapper plus 10kg" id="btn_plus_10kg" data-weight="10">+10Kg</button>
                     <div class="jakopalkki"></div>  <!-- Nappien välinen erotus  -->
